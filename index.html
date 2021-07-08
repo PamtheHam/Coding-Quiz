@@ -5,26 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Coding Quiz</title>
+    <title>JavaScript Quiz</title>
 </head>
 <body>
-    <div class="container">
-        <div id="question-container">
-            <div id="question">Question</div>
-            <div id="answer-button" class="btn-grid">
-                <button class="btn">Answer</button>
+    <header>
+        <h1 id="heading">JavaScript Quiz</h1>
+        <h2 class="time" id="time"></h2>
+    </header>
+    <section id="high-score-container">
+        <div class="high-score">hello, world</div>
+    </section>
+    <section>
+        <button id="high-scores" class="btn">High Scores</button>
+    </section>
+    <section id="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+    </section>
+    <section id="container">
+            <div id="question-container">
+                <div id="question">Question</div>
+                <div id="answer-container"></div>
             </div>
-        </div>
-        <div class="controls">
-            <button id="start-btn" class="start-btn">Start</button>
-            <button id="next-btn" class="next-btn">Next</button>
-        </div>
-        <div class="flex">
-            <h1>Let's Go!</h1>
-            <button class="btn">Play</button>
-            <button id="high-score-btn" class="btn">High Scores</button>
-        </div>
-    </div>
+            <div id="high-score-form">
+                <form>
+                    <h2>High Scores</h2>
+                    <input type="text" placeholder="Initials here:" id="initials"> 
+                    <label></label>
+                    <button type="submit" id='submit-btn'>Submit</button>
+                </form>
+            </div>
+    </section>
 
 <script src="script.js"></script>
 </body>
