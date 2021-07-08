@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: rosybrown;
+    background-color: cadetblue;
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
@@ -13,33 +13,49 @@ body{
 
 .btn {
     text-align: center;
-    background-color: seagreen;
-    color: seashell;
+    background-color: powderblue;
+    color: black;
     padding: 20px;
     margin: 10px;
-    font-size: 24px;
+    font-size: 20px;
     border: 2px solid darkslategray;
     border-radius: 4px;
 }
 
-.btn-grid{
-    display: grid;
-    margin: 20px 0;
-}
-#answer-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#submit-btn {
+  text-align: center;
+  background-color: powderblue;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  font-size: 14px;
+  border: 2px solid darkslategray;
+  border-radius: 4px;
 }
 
-.controls {
+#controls {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#time {
+  text-align: right;
+  margin-right: 100px;
+  margin: 50px;
+}
+
+.answer-btn{
+  margin: 22px 8px 10px;
+  padding: 5px 5px;
+  font-size: 18px;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+
 button:hover {
-    color: black;
+    color: grey;
     cursor: crosshair;
   }
 
@@ -47,23 +63,25 @@ button:hover {
     box-shadow: 5px 5px grey;
   }
 
-.btn-wrong {
-background-color: firebrick;
-}
-
-.btn-right {
-background-color: green;
-}
-
   h1 {
-      font-size: 3.5rem;
+      font-size: 45px;
       color: whitesmoke;
       margin-top: 5rem;
       margin-bottom: 5rem;
+      text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: whitesmoke;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+
   }
 
 
-  .container{
+  #container{
       width: 800px;
       display: flex;
       flex-direction: column;
@@ -73,7 +91,8 @@ background-color: green;
       margin: 0 auto;
       border:darkslategray solid 3px;
       border-radius: 5px;
-      padding: 10px;
+      padding: 30px;
+      text-align: center;
   }
 
   @media screen and (max-width: 1200px) {

@@ -156,7 +156,6 @@ highScoresArray.push(scoreObject)
 }
 
 var scoreList = document.getElementById("high-score-form");
-
 localStorage.setItem("highScore", JSON.stringify(highScoresArray));
 
 // stop timer
